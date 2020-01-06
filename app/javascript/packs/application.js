@@ -20,3 +20,5 @@ require("bootstrap/dist/js/bootstrap")
 
 import { initFullPageJS } from '../components/fullpage';
 // initFullPageJS();
+
+

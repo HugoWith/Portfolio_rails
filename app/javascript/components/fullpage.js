@@ -29,7 +29,7 @@ const initFullPageJS = () => {
     navigation: true }
     )};
 
-// export { initFullPageJS };
+export { initFullPageJS };
 //     onLeave: (origin, destination, direction) => {
 //       const section = destination.item;
 //       const title = section.querySelector("h1");
