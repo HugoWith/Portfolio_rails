@@ -27,7 +27,7 @@ $opening-angle:$pi*2;
   text-align:center;
   line-height:80px;
   transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
+  transition:transform ease-out 3000ms;
 }
 .menu-open{
   display:none;
@@ -47,7 +47,7 @@ $opening-angle:$pi*2;
   left:50%;
   margin-left:-$width/2;
   margin-top:-$height/2;
-  transition:transform 200ms;
+  transition:transform 1000ms;
 }
 $hamburger-spacing:8px;
 .hamburger-1{
@@ -94,7 +94,7 @@ $hamburger-spacing:8px;
   }
   @for $i from 1 through $menu-items{
     &:nth-child(#{$i+2}){
-      transition-duration:180ms;
+      transition-duration:1000ms;
     }
   }
 }
@@ -103,7 +103,7 @@ $hamburger-spacing:8px;
   @extend %ball;
   z-index:2;
   transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
-  transition-duration:400ms;
+  transition-duration:1000ms;
   transform:scale(1.1,1.1) translate3d(0,0,0);
   cursor:pointer;
 }
@@ -112,7 +112,7 @@ $hamburger-spacing:8px;
 }
 .menu-open:checked+.menu-open-button{
   transition-timing-function:linear;
-  transition-duration:200ms;
+  transition-duration:1000ms;
   transform:scale(0.8,0.8) translate3d(0,0,0);
 }
 
@@ -121,7 +121,7 @@ $hamburger-spacing:8px;
   @for $i from 1 through $menu-items{
 
     &:nth-child(#{$i+2}){
-      transition-duration:90ms+(100ms*$i);
+      transition-duration:300ms+(400ms*$i);
       transform:translate3d(110px*$i,0,0);
     }
   }

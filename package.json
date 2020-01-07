@@ -5,11 +5,11 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.2.2",
+    "@rails/webpacker": "^4.0.2",
     "bootstrap": "4.3.1",
-    "fullpage.js": "^3.0.8",
     "gsap": "^3.0.4",
     "jquery": "^3.4.1",
+    "paper": "^0.12.4",
     "popper.js": "^1.16.0",
     "turbolinks": "^5.2.0"
   },

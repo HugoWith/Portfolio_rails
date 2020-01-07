@@ -1,10 +1,9 @@
 
 
 
- <div class="fullpage" id="fullpage">
-        
-          
-        <section class="section s1">
+ <div class="wrapper context" id="wrapper">
+            
+        <section class="section s1" data-anchor="home">
             <h1>Hello, Je suis Hugo</h1>
          
          <%# <div id="menu"> 
@@ -23,20 +22,20 @@
         </div> %>
 
         <nav class="menu">
-  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-  <label class="menu-open-button" for="menu-open">
-    <span class="hamburger hamburger-1"></span>
-    <span class="hamburger hamburger-2"></span>
-    <span class="hamburger hamburger-3"></span>
-  </label>
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+            <label class="menu-open-button" for="menu-open">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
+            </label>
+            
+            <a href="#about" class="menu-item"> <i class="fa fa-hand-spock"></i> </a>
+            <a href="#project" class="menu-item"> <i class="fa fa-rocket"></i></a>
+            <a href="#cv" class="menu-item"> <i class="fas fa-graduation-cap"></i> </a>
+            <a href="#contact" class="menu-item"> <i class="fa fa-envelope"></i> </a>
   
-  <a href="#" class="menu-item"> <i class="fa fa-bar-chart"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-plus"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-heart"></i> </a>
-  <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>
   
-  
-</nav>
+        </nav>
 
 
 <!-- filters -->
@@ -61,7 +60,8 @@
 </svg>
 
         </section>
-        <section class="section s2">
+
+        <section class="section s2" data-anchor="about">
             <h1>À propos</h1>
             <div class="description">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat placeat blanditiis quasi enim soluta earum, praesentium officiis rerum deserunt fuga, porro odio, animi sint hic eius est dolorum neque ex!</p>
@@ -71,17 +71,16 @@
             <%= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
             <%= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
         </section>
-        <section class="section s3">
-         
+
+        <section class="section s3" data-anchor="projet">
             <h1>Projet</h1>
-            
         </section>
-        <section class="section s4">
-           
-            <h1>CV</h1>
-           
+
+        <section class="section s4" data-anchor="cv">
+            <h1>CV</h1> 
         </section>
-        <section class="section s5">
+
+        <section class="section s5" data-anchor="contact">
             <h1>Contact</h1>
         </section>
     </div>

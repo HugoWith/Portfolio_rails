@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <title>Hugo Valla</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -22,11 +22,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
 
 <script>
-    new fullpage("#fullpage", {
+    new fullpage("#wrapper", {
     //options here
     licenseKey: 'q2NraPV@b1',
     autoScrolling: true,
     navigation: true,
+    keyboardScrolling: true,
+    anchors: ['home', 'about', 'project', 'cv', 'contact'],
     onLeave: (origin, destination, direction) => {
       console.log(destination);
       const section = destination.item;
