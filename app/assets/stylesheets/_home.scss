@@ -33,16 +33,18 @@ section h1 {
   .section h1 {
     font-size: 64px;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -60%);
     background: linear-gradient(to left, #a4d4ae, #32afa9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .s2 {
-    /* background: linear-gradient(to left top, rgb(189, 193, 199), white); */
+    background-image: url(BG_about.svg);
+    background-size: 250%; 
+    background-repeat: no-repeat;
   }
   /* .s2 h1 {
     font-size: 48px;
@@ -66,6 +68,6 @@ section h1 {
     font-size: 20px;
   }
   .description p {
-    margin: 50px 0px;
+    margin: 100px 0px;
   }
  
